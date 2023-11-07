@@ -1,4 +1,5 @@
 <template>
+  {{ msg }}
   <ThreeComponent />
 </template>
 
@@ -7,6 +8,9 @@ import { defineComponent } from "vue";
 import ThreeComponent from "./ThreeComponent.vue";
 export default defineComponent({
   name: "HelloWorld",
+  props: {
+    msg: String,
+  },
   components: {
     ThreeComponent,
   },
