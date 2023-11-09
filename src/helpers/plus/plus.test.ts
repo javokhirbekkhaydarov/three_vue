@@ -1,6 +1,6 @@
 import { plus } from "./plus";
 
-describe("minus", function () {
+describe("plus", function () {
   test("positive", () => {
     expect(plus(5, 5)).toBe(0);
   });
