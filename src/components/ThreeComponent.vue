@@ -1,11 +1,7 @@
 <template>
   <div class="box" ref="box"></div>
 </template>
-<script lang="ts">
-export default {
-  name: "ThreeComponent",
-};
-</script>
+
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 import * as THREE from "three";
