@@ -44,14 +44,15 @@ export default {
     camera.position.set(10, 8, 0);
 
     const controls = new OrbitControls(camera, renderer.domElement);
-    controls.target.set(0, 1, 0);
+    controls.target.set(0, 0, 0);
     controls.update();
     controls.enablePan = false;
     controls.enableDamping = true;
+    controls.dampingFactor = 0.25;
     controls.enableZoom = false;
-    controls.enableRotateY = false;
-    controls.minPolarAngle = Math.PI / 2;
-    controls.maxPolarAngle = Math.PI / 2;
+    controls.enableRotate = true;
+    controls.minPolarAngle = 0;
+    controls.maxPolarAngle = Math.PI;
 
     const dracoLoader = new DRACOLoader();
     dracoLoader.setDecoderPath("jsm/libs/draco/gltf/");

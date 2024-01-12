@@ -3,6 +3,7 @@
   <router-link to="/">home</router-link>
   <router-link to="/draw">draw</router-link>
   <router-link to="/bmw">bmw</router-link>
+  <router-link to="/iphone">IPhone</router-link>
 </div>
   <router-view />
 </template>

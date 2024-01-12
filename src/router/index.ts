@@ -17,6 +17,11 @@ const routes: Array<RouteRecordRaw> = [
     name: "bmw",
     component: () =>
       import( "../components/3DModel.vue"),
+  },{
+    path: "/iphone",
+    name: "iphone",
+    component: () =>
+      import( "../components/iPhone.vue"),
   },
 ];
 
